@@ -1,5 +1,7 @@
 ## Clone the Repository
 
+Change to /root directory:
+
 ```
 cd /root/
 ```
@@ -15,11 +17,12 @@ Checking connectivity... done.
 
 Edit the settings:
 
+```
 $VI_SERVER = "10.94.214.191"
 $VI_USERNAME = "root"
 $VI_PASSWORD = "xxxx"
 $VI_VM = "DummyVM"
-
+```
 
 ## Example-1
 
