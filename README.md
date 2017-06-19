@@ -26,5 +26,9 @@ $VI_VM = "DummyVM"
 
 ## Example-1
 
+```
 docker run --rm -it \
--v /root/powerclicore-docker-container-samples/scripts:/tmp/scripts vmware/powerclicore /tmp/scripts/pcli_core_docker_sample1.ps1
+-v /root/powerclicore-docker-container-samples/scripts:/tmp/scripts \
+vmware/powerclicore \
+/tmp/scripts/pcli_core_docker_sample1.ps1
+```
