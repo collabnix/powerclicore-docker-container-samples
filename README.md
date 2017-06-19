@@ -1,6 +1,7 @@
 ## Clone the Repository
 
-```cd /root/
+```
+cd /root/
 ```
 
 ```git clone https://github.com/ajeetraina/powerclicore-docker-container-samples
