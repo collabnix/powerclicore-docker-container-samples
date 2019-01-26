@@ -20,14 +20,10 @@ Write-Host "`nConnecting to vCenter Server ..."
 Connect-VIServer -Server $VI_SERVER -User $VI_USERNAME -password $VI_PASSWORD | Out-Null
 
 Write-Host "\nGetting ESXi Details"
-Get-VMHost | Export-Csv -path "/tmp/scripts/myreport.csv" –NoTypeInformation
+Get-VMHost | Export-Csv -path "/tmp/scripts/myesxhost-report.csv" –NoTypeInformation
 
-Write-Host "`nGetting VMs List ..."
-Get-VM | Out-Null
-
-
-
-Write-Host "Get-VM"
+Write-Host "\nGetting ESXi Details"
+Get-VM | Export-Csv -path "/tmp/scripts/myvm-report.csv" –NoTypeInformation
 
 Write-Host "Disconnecting ...`n"
 Disconnect-VIServer * -Confirm:$false
