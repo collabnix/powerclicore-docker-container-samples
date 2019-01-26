@@ -1,10 +1,9 @@
 <#
-.SYNOPSIS Run a static/hardcoded PowerCLI script w/PowerCLI Core Docker Container
-.NOTES  Author:  William Lam
-.NOTES  Site:    www.virtuallyghetto.com
-.NOTES  Reference: http://www.virtuallyghetto.com/2016/10/5-different-ways-to-run-powercli-script-using-powercli-core-docker-container.html
-.NOTES  Docker Command: docker run --rm -it --entrypoint='/usr/bin/powershell' \
-    -v /Users/lamw/scripts:/tmp/scripts vmware/powerclicore /tmp/scripts/pcli_core_docker_sample1.ps1
+.SYNOPSIS Getting a list of VM and ESXi Host and saving it to SCV Format all using Docker container
+.NOTES  Author:  Ajeet S Raina
+.NOTES  Site:    www.collabnix.com
+.NOTES  Reference: TBD
+.NOTES  docker run --rm --entrypoint="/usr/bin/pwsh" -v ${PWD}/scripts:/tmp/scripts vmware/powerclicore /tmp/scripts/script_getting_vm_esxhost.ps1 
 #>
 
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false | Out-Null
