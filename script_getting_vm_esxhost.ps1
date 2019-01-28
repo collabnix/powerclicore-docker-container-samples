@@ -8,9 +8,9 @@
 
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false | Out-Null
 
-$VI_SERVER = "100.98.26.108"
+$VI_SERVER = "XXXX"
 $VI_USERNAME = "root"
-$VI_PASSWORD = "dell@123"
+$VI_PASSWORD = "XXXX"
 
 Write-Host "VI_SERVER=$VI_SERVER"
 Write-Host "VI_USERNAME=$VI_USERNAME"
